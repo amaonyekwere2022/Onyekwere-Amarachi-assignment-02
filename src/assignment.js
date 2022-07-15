@@ -2,7 +2,15 @@
 // DO NOT EDIT THIS BLOCK
 const assignment = {};
 // ========================
-
+function sumOfNumbers(numbers) {
+  const sum=numbers.reduce((arr,curr)==> {
+    arr +=curr;
+  return arr;
+  });
+     return sum; 
+      }
+  
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 1
@@ -13,14 +21,7 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-function sumOfNumbers(arrayOfNumbers) {
-    let sum = 0;
-  for(i= 0; i< arrayOfNumbers.lenght; i++){
-      sum += arrayOfNumbers[i];
-  }
-    return sum
-}
-assignment.sumOfNumbers = sumOfNumbers;
+
 
 
 /**
